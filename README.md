@@ -8,8 +8,7 @@ This repository consist of terraform module for provisioning EC2 instance(s) on 
 ## Prerequisite
 * [Terraform](https://www.terraform.io/) (tested on v0.12)
 * [Amazon Web Services CLI (aws-cli)](https://aws.amazon.com/cli/)
-* [AWS Key
-Pair](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair)
+* [AWS Key Pair](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair)
 
 
 **Note: Terraform and aws-cli can be installed with `brew install` on Mac.**
@@ -76,6 +75,7 @@ $ ssh -i test-key-pair.pem ec2-user@<public-ip>
 7. Once done with the infrastructure, you can destroy it.
 ```sh
 $ terraform destroy
+```
 
 ## Troubleshooting
 
